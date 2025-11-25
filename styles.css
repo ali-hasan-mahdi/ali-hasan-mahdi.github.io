@@ -374,6 +374,24 @@ section h2 {
     margin-top: 5px;
 }
 
+/* 🔥 NEW: make lists inside job blocks match paragraph text */
+.job ul {
+    margin: 5px 0 5px 18px;
+    padding-left: 0;
+}
+
+.job li {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 2px;
+}
+
+/* 🔥 NEW: keep bold labels same size as rest of text */
+.job strong {
+    font-size: 14px;
+}
+
 .skills,
 .tech_stack {
     display: flex;
@@ -571,7 +589,6 @@ section h2 {
         gap: 4px;
     }
 
-    /* Comment out timeline-specific print styles */
     /*
     .timeline {
         padding-left: 9px;
@@ -635,6 +652,75 @@ section h2 {
         font-size: 7.5pt;
         padding: 6px 10px;
     }
+
+    .contact-link {
+        font-size: 8pt;
+        padding: 2px 4px;
+    }
+
+    .location {
+        font-size: 8pt;
+    }
+
+    .contact-link .icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .contact-link img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .contact-link {
+        gap: 4px;
+    }
+
+    .job-header h3 {
+        font-size: 9.5pt;
+        color: #222;
+    }
+
+    .company-name {
+        font-size: 9pt;
+    }
+
+    .job-date {
+        font-size: 8pt;
+    }
+
+    .job-meta {
+        font-size: 8pt;
+        gap: 8px;
+    }
+
+    .job-description {
+        font-size: 8pt;
+    }
+
+    .job-tech {
+        font-size: 7.5pt;
+    }
+
+    .languages {
+        gap: 6px;
+    }
+
+    .languages li {
+        font-size: 7.5pt;
+        padding: 4px 8px;
+    }
+
+    .courses-grid {
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .course {
+        font-size: 7.5pt;
+        padding: 6px 10px;
+    }
+
 }
 
 .tech-category {
@@ -868,26 +954,6 @@ h4 {
         gap: 4px;
     }
 
-    /* Comment out timeline-specific print styles */
-    /*
-    .timeline {
-        padding-left: 9px;
-        margin-left: 5px;
-    }
-
-    .timeline::before {
-        width: 1px;
-    }
-
-    .timeline .job::before,
-    .timeline .education::before {
-        left: -3mm !important;
-        top: 6px !important;
-        width: 7px;
-        height: 7px;
-    }
-    */
-
     .job-header h3 {
         font-size: 9.5pt;
         color: #222;
@@ -1054,7 +1120,6 @@ h4 {
         min-width: unset;
         max-width: 100%;
         width: calc(100% - 16px);
-        /* account for padding */
         margin: 10px 0;
     }
 
